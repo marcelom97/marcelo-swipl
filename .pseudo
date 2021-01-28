@@ -1,0 +1,92 @@
+if brakes is maybe do 
+  answer = "Please check your brakes and fill the whole form."
+end
+
+if brakes is no do 
+  answer = "Not appropriate for riding, your brakes needs service."
+end
+
+if tyres is maybe do 
+  answer = "Please check your tyres and fill the whole form."
+end
+
+if tyres is yes do 
+  answer = "Not appropriate for riding, you need to change your tyres."
+end
+
+if fuel is maybe do 
+  answer = "Please check your fuel deposit and fill the whole form."
+end
+
+if fuel is no do 
+  answer = "Not appropriate for riding, please refill your fuel deposit."
+end
+
+if helmet is maybe do 
+  answer = "Please check for your helmet and fill the whole form."
+end
+
+if helmet is no do 
+  answer = "Not appropriate for riding, always wear a helmet when you ride a motorcycle."
+end
+
+if jacket is maybe do 
+  answer = "Please check your wardrobe for protection jacket and fill the whole form."
+end
+
+if jacket is no do 
+  answer = "Not appropriate for riding, always wear protection jacket when you ride a motorcycle."
+end
+
+if trousers is maybe do 
+  answer = "Please check your wardrobe for protection trousers fill the whole form."
+end
+
+if trousers is no do 
+  answer = "Not appropriate for riding, always wear protection trousers when you ride a motorcycle."
+end
+
+if rain is maybe do 
+  answer = "Please check the weather and fill the whole form."
+end
+
+if rain is yes do 
+  answer = "Not appropriate for riding, riding on rain can be very dangerous."
+end
+
+if wet_road is maybe do 
+  answer = "Please check the road and fill the whole form."
+end
+
+if wet_road is yes do 
+  answer = "Not appropriate for riding, riding on wet road can be very dangerous."
+end
+
+if ice is maybe do 
+  answer = "Please check the road and fill the whole form."
+end
+
+if ice is yes do 
+  answer = "Not appropriate for riding, road with ice can be very dangerous."
+end
+
+if temp < 5 do 
+  answer = "Not appropriate for riding, low temperature can be very dangerous."
+end
+
+if temp > 35 do 
+  answer = "Not appropriate for riding, high temperature can be very dangerous."
+end
+
+if brakes is yes and
+   tyres is no and
+   fuel is yes and
+   helmet is yes and
+   jacket is yes and
+   trousers is yes and
+   temp >= 5 and temp = < 35 and
+   rain is no and
+   wet_road is no and
+   ice is no do 
+  answer = "You can drive your motorcycle with safety."
+end
